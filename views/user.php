@@ -19,12 +19,13 @@
   } else {
     $affichGenderSearch = "une femme ";
   }
-  include("header.php")
+  include("../utilitaires/header.php")
 ?> 
 
 <body class="ndBody">
   
-<?php include("navBar.php");?>
+<?php include("../utilitaires/navBar.php");?>
+
 
   <div class="test w-100 mt-4">
     <div class="row w-100 my-auto mx-auto">
@@ -83,7 +84,7 @@
     </div>
   </div> 
 </div>
-<?php require('footer.html'); ?>
+<?php require('../utilitaires/footer.html'); ?>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->

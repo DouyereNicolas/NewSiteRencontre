@@ -47,15 +47,15 @@
                 <p> Inscrivez-Vous </p>
                 <div class="row mt-4">
                   <div class="col-6">
-                    <input type="text" class="form-control" name="lastname" placeholder="Nom de Famille" value="lastname">
+                    <input type="text" class="form-control" name="lastname" placeholder="ex: Dupont" required>
                   </div>
                   <div class="col-6">
-                    <input type="text" class="form-control" name="firstname" placeholder="Prénom" value="firstname">
+                    <input type="text" class="form-control" name="firstname" placeholder="ex: Laure" required>
                   </div>
                 </div>
                 <div class="row mt-4">
                   <div class="col-6">
-                    <input type="text" class="form-control" name="age" placeholder="Age" value="17">
+                    <input type="text" class="form-control" name="age" placeholder="ex: 25" required>
                   </div>
                   <div class="col-6">
                     <select id="gender" name="gender" class="form-control">
@@ -66,10 +66,10 @@
                 </div>
                 <div class="row mt-4  mb-4">
                   <div class="col-6">
-                    <input type="text" class="form-control" name="zipCode" placeholder="Code Postal" value="93000">
+                    <input type="text" class="form-control" name="zipCode" placeholder="76000" required>
                   </div>
                   <div class="col-6">
-                    <input type="text" class="form-control" name="mail" placeholder="Adresse Email" value="email@truc.net">
+                    <input type="text" class="form-control" name="mail" placeholder="email@truc.net" required>
                   </div>
                 </div>
                 <p>Vous etes intéressé par&nbsp;:</p>
@@ -97,6 +97,8 @@
   <?php
   }
     ?>
+    <?php require('utilitaires/footerIndex.html'); ?>
+
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="../assets/js/script.js"></script>

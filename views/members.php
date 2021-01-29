@@ -3,10 +3,10 @@
     $arrayCurrentUser = unserialize($_COOKIE["arrayInfoUser"]);
     $lastNameUser = $arrayCurrentUser["lastname"];
     $firstNameUser = $arrayCurrentUser["firstname"];
-    include("header.php");
+    include("../utilitaires/header.php");
   ?>
   <body class="ndBody">
-  <?php include("navBar.php");?>
+  <?php include("../utilitaires/navBar.php");?>
   <div class="container">
       <div class="row">
         <div class="col-12 text-center"><br><br><br>
@@ -91,7 +91,7 @@
         </div> <!-- fermeture derniere col -->
       </div> <!-- fermeture dernier row -->     
     </div><!-- fermeture container  -->
-    <?php require('footer.html'); ?>
+    <?php require('../utilitaires/footer.html'); ?>
 
   
    <!-- Optional JavaScript -->

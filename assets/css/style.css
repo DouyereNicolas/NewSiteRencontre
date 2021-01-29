@@ -293,7 +293,13 @@ form.ndForm{
   margin-top: 20px;
 }
 
-
+.VbBody{
+  width: 85%;
+  background-color: rgb(248, 183, 221);
+  margin: auto;
+  padding: 20px;
+  text-align: justify;
+}
 .ndCardMembers button{
   background-color: #7e5253;
   color : white;

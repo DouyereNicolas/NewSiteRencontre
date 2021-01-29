@@ -6,10 +6,10 @@
   $lastNameUser = $arrayCurrentUser["lastname"];
   $firstNameUser = $arrayCurrentUser["firstname"];
   $genderSearch = $arrayCurrentUser['genderSearch'];
-  include("header.php");
+  include("../utilitaires/header.php");
 ?>
 <body class="ndBody">
-<?php include("navBar.php");?>
+<?php include("../utilitaires/navBar.php");?>
 <div class="carousel js-flickity">
   <!-- images from unsplash.com -->
   <?php 
@@ -36,7 +36,7 @@
                <?php };}; ?>
 </div>
 <div class="containerfluid mt-6" >
-<?php require('footer.html'); ?>
+<?php require('../utilitaires/footer.html'); ?>
 </div>
 
 
