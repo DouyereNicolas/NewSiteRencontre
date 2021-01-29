@@ -45,6 +45,12 @@
                   </div>
                <?php };}; ?>
 </div>
+<div class="containerfluid mt-6" >
+<?php require('footer.html'); ?>
+</div>
+
+
+
 <script src="../assets/js/script.js"></script>
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

@@ -26,7 +26,7 @@
   
 <?php include("navBar.php");?>
 
-  <div class="test  d-flex w-100 mt-4">
+  <div class="test w-100 mt-4">
     <div class="row w-100 my-auto mx-auto">
       <div class="col-12 d-flex ">
         <div class="card mx-auto ndColorCarUser" style="width: 60% ;">
@@ -83,7 +83,8 @@
     </div>
   </div> 
 </div>
-  
+<?php require('footer.html'); ?>
+
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   

@@ -89,17 +89,9 @@
           }
       ?>
         </div> <!-- fermeture derniere col -->
-      </div> <!-- fermeture dernier row -->
-      <div class="row ">
-        <div class="col-12 ">
-          <br> <br> <br> <br> <br> <br>
-          il nous faut un pied de page !!!
-
-          <br> <br> <br> <br> <br> <br> <br>
-        </div>
-      </div>
-
-    </div>
+      </div> <!-- fermeture dernier row -->     
+    </div><!-- fermeture container  -->
+    <?php require('footer.html'); ?>
 
   
    <!-- Optional JavaScript -->
