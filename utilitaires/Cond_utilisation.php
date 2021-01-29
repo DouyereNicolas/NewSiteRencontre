@@ -1,5 +1,5 @@
 <?php include("header.php");?>
-<body >
+<body class="ndBody">
   <div class="container VbBody">
     Conditions Générales applicables aux Events<br>
     (Conditions Générales applicables aux Events/Activités en date du 25/04/2018)
@@ -198,7 +198,7 @@
     Les Services fournis par AMOUR aux Membres et aux Abonnés en application des présentes Conditions Générales sont édités par AMOUR, SAS au capital social de 2.369.142,80 euros, inscrite au Registre du Commerce et des Sociétés de Paris (France) sous le numéro 439 780 339 (numéro de TVA intracommunautaire : FR88439780339), établie 6, rue Auber – 75009 PARIS, France, représentée par son Président Directeur Général et Directeur de la publication des Sites (téléphone : 0806 600 002, du lundi au vendredi de 10h à 18h/ email : AMOUR@AMOUR-corp.com). Les Sites sont hébergés sur les serveurs du Groupe AMOUR.<br>
     
     Pour toute question, vous pouvez contacter AMOUR en remplissant le formulaire de contact.<br>
-
+    <a href="javascript:history.go(-1)">Retour</a>
   </div>
 </body>
 </html>
