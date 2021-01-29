@@ -47,15 +47,15 @@
                 <p> Inscrivez-Vous </p>
                 <div class="row mt-4">
                   <div class="col-6">
-                    <input type="text" class="form-control" name="lastname" placeholder="Nom de Famille" value="lastname">
+                    <input type="text" class="form-control" name="lastname" placeholder="Nom de Famille" required>
                   </div>
                   <div class="col-6">
-                    <input type="text" class="form-control" name="firstname" placeholder="Prénom" value="firstname">
+                    <input type="text" class="form-control" name="firstname" placeholder="Prénom" required>
                   </div>
                 </div>
                 <div class="row mt-4">
                   <div class="col-6">
-                    <input type="text" class="form-control" name="age" placeholder="Age" value="17">
+                    <input type="text" class="form-control" name="age" placeholder="Age" required>
                   </div>
                   <div class="col-6">
                     <select id="gender" name="gender" class="form-control">
@@ -66,10 +66,10 @@
                 </div>
                 <div class="row mt-4  mb-4">
                   <div class="col-6">
-                    <input type="text" class="form-control" name="zipCode" placeholder="Code Postal" value="93000">
+                    <input type="text" class="form-control" name="zipCode" placeholder="Code Postal" required>
                   </div>
                   <div class="col-6">
-                    <input type="text" class="form-control" name="mail" placeholder="Adresse Email" value="email@truc.net">
+                    <input type="text" class="form-control" name="mail" placeholder="Adresse Email" required>
                   </div>
                 </div>
                 <p>Vous etes intéressé par&nbsp;:</p>

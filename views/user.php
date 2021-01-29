@@ -42,7 +42,7 @@
             </div>    
           </div>
             <div class="container ndDestroy text-center mb-4">
-              <a href="../index.php?btonDelete=true"><button class="btn mr-4" type="submit">Se déconnecter</button></a>
+              <a href="../index.php?btonDelete=true"><button class="btn mr-4" type="submit">ADIEU !!!</button></a>
               <a href="https://www.meetic.fr/"><button class="btn" type="submit">TAKE MY MONEY</button></a>
             </div>
         </div>
