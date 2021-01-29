@@ -319,3 +319,8 @@ form.ndForm{
   background-color: #ebd2be;
   margin-top: 30px;;
 }
+
+.ndCardMembers:hover{
+  transform: scale(1.05);
+  z-index:100;
+}
