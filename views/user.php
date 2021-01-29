@@ -6,10 +6,19 @@
   $firstNameUser = ucfirst($arrayCurrentUser['firstname']);
   $age = ucfirst($arrayCurrentUser['age']);
   $gender = ucfirst($arrayCurrentUser['gender']);
+  if ($gender == "Homme") {
+  $affichGender = "un homme ";
+  } else {
+  $affichGender = "une femme ";
+  }
   $mail = $arrayCurrentUser['mail'];
   $zipCode = $arrayCurrentUser['zipCode'];
   $genderSearch = $arrayCurrentUser['genderSearch'];
-
+  if ($genderSearch == "homme") {
+    $affichGenderSearch = "un homme ";
+  } else {
+    $affichGenderSearch = "une femme ";
+  }
   include("header.php")
 ?> 
 
@@ -27,7 +36,7 @@
               <p class="card-text">Votre Nom : <?=$lastNameUser;?></p>
               <p class="card-text">Votre prénom : <?=$firstNameUser;?></p>
               <p class="card-text">votre age : <?=$age;?></p>
-              <p class="card-text">Vous etes : <?=$gender;?> et vous recherchez : <?=$genderSearch;?></p>
+              <p class="card-text">Vous êtes  <?=$affichGender;?> et vous recherchez  <?=$affichGenderSearch;?></p>
               <p class="card-text">Votre adresse mail : <?=$mail;?></p>
               <p class="card-text">Votre code postal : <?=$zipCode;?></p>
             </div>    
@@ -42,7 +51,7 @@
 
     <div class="col-12 mt-4">
     <div class="container text-center" style="height : 100%;">
-    <p class="mb-4 ndTextPret">Ces prétendantes pourrais vous intéréssez :</p>
+    <p class="mb-4 ndTextPret">Ces <?php if($genderSearch == "homme"){ ?> prétendants <?php }else{ ?> prétendantes <?php }; ?>pourraient vous intérésser :</p>
     <?php 
             $item = 0;
             foreach($arrayMembers as $key => $value){
@@ -52,10 +61,10 @@
                     $age = $value['age'];
                     $picture = $value['picture'];
                     $match = $value['match'];
-                    if($item == 0 || $item == 3 || $item == 6 || $item == 9){
+                    if(($item % 4) == 0){
                       ?> <div class="row w-100 text-center"> <?php
                     }
-                    ?><div class="col-6 col-lg-4 ">
+                    ?><div class="col-6 col-lg-3 ">
                         <img src="../assets/img/<?=$picture;?>" class="testImage" style="width : 120px;height : 120px;"/>
                         <p class="mt-2"><?=ucfirst($lastName);?> <?=ucfirst($firstName);?></p>
                         <p><?=$age;?></p>
@@ -63,7 +72,7 @@
 
                   <?php
         
-        if($item == 2 || $item == 5 || $item == 8 || $item == 9){
+        if($item == 3 || $item == 7 || $item == 9){
           ?> </div> <?php
         }
         $item = $item + 1;

@@ -38,23 +38,24 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-6 d-flex col-lg-3 ">
+        <div class="col-sm-6 col-lg-3 d-flex ">
         <?php
             } else {
         ?>
         </div>
-        <div class="col-6 d-flex col-lg-3 ">
+        <div class="col-sm-6 col-lg-3 d-flex">
         <?php
             }
         ?>
 
         <!-- affichage des infos -->
-        <div class="card mt-3 style=" background-color: darkorange;">
+        <div class="card mt-3 ndCardMembers">
           <!-- When you need equal height, add .h-100 to the cards-->
-          <div class="text-center">
+          <div class=" text-center">
             <img class="VbPictMember mt-3" src="../assets/img/<?= $picture ?>" alt="photo du membre" class="card-img-top" />
           </div>
           <div class="card-body mt-3">
+            <div class="test">
             <h5 class="card-title"><?= $lastname ?> <?= $firstname ?>, <?= $age ?> </h5>
             <p class="card-text"><?= $gender ?> <br>
               <?= $mail ?> <br>
@@ -62,24 +63,24 @@
               Recherche <?= $genderSearch ?>
               <!-- <?= $match ?> <br> <?= $description ?> -->
             </p>
-            <button type="button" data-bs-toggle="modal" data-bs-target="#infos<?= $indMember ?>" class="btn btn-primary align-bottom">Description</button>
+            <button type="button" data-toggle="modal" data-target="#infos<?= $indMember ?>" class="btn">Description</button>
+            </div>
           </div>
         </div> <!-- fermeture div Card  -->
         <!--   fenetre modale liée à <a> ou  par <button> par son id -->
 
         <div class="modal fade" id="infos<?= $indMember ?>">
           <div class="modal-dialog">
-            <div class="modal-content">
+            <div class="modal-content ">
               <!-- Contenu de la fenêtre modale  -->
-              <div class="modal-header">
-                <h5 class="modal-title text-center"><?= $firstname ?></h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              <div class="modal-header text-center">
+                <p class="modal-title w-100"><?= $firstname ?></p>
               </div>
               <div class="modal-body ">
                 <?= $description ?>
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
               </div>
             </div>
           </div>

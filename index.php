@@ -33,13 +33,13 @@
     <div class="ndContentIndex w-100 my-lg-auto">
       <div class="row w-100 m-0 ">
         <div class="col-12 col-lg-5 ">
-          <img src="/assets/img/arabesque.png" style="width : 100%;"/>
+          <img src="assets/img/arabesque.png" style="width : 100%;"/>
           <div class="ndTextAccueil">
               <p>Vivez l'amour</p>
               <p>avec un grand</p>
               <p id="ndMajA">A</p>
             </div>
-          <img src="/assets/img/arabesqueRetourner.png" style="width : 100%;"/>
+          <img src="assets/img/arabesqueRetourner.png" style="width : 100%;"/>
         </div>
         <div class="col-12 col-lg-7 ">
           <div class="container border d-flex ndContForm">

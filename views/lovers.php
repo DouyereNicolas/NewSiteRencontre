@@ -1,6 +1,7 @@
 <?php 
   include("../controllers/lovers_controller.php"); 
   $arrayMembers = CreatTabMembers();
+  
   $arrayCurrentUser = unserialize($_COOKIE["arrayInfoUser"]);
   $lastNameUser = $arrayCurrentUser["lastname"];
   $firstNameUser = $arrayCurrentUser["firstname"];
@@ -36,8 +37,10 @@
                       <p><?=ucfirst($lastName);?> <?=ucfirst($firstName);?></p>
                       <p>j'ai <?=$age;?></p>
                       <form action="lovers.php" method="post">
-                        <input type="image" value="1" id="match" alt="Match" src="../assets/img/coeurVide.png">
-                    </form>
+                        <input type="image" value="1" name ="match" id="match" alt="Match" src="../assets/img/coeurVide.png">
+                      </form>
+  
+                      
                     </div>    
                   </div>
                <?php };}; ?>
